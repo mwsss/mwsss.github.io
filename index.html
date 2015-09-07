@@ -1,7 +1,7 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>n49blank01</title>
+	<title>n49mod01</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=2">
 	<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -291,7 +291,7 @@ window.onerror  = function(msg, url, line, column, error) {
         addLog( " downloading symbols file ");
         // get non minified symbols and demangle the callstack. 
 		$.ajax({
-			  url : "UE4Game.js.symbols",
+			  url : "UE4Game.js.symbols.gz",
 			  dataType: "text",
 			  success : function (data) {	
                   addLog(" symbols file downloaded, demangling..");
@@ -362,7 +362,7 @@ var Module = {
 		TOTAL_MEMORY: TOTAL_GAME_MEMORY,
 		noImageDecoding: true,
 		noAudioDecoding: true,
-		arguments: ['../../../n49blank01/n49blank01.uproject ','/Game/NewMap',' ','-Messaging',filehostargument],
+		arguments: ['../../../n49mod01/n49mod01.uproject ','/Game/NewMap3',' ','-Messaging',filehostargument],
 
 		print: (function() {
 			return addLog; 
@@ -378,7 +378,7 @@ var Module = {
 
 		// file location. 
 		locateFile : function (name){ 
-		      return name + "";
+		      return name + ".gz";
 		},
 
 
@@ -435,9 +435,9 @@ $(document).ready(function() {
     addLog( "Starting downloads" );
     // start downloads in parallel, print when done.  
     var promises = [
-			'Utility.js',
-			'n49blank01.data.js',
-			'UE4Game.js'   
+			'Utility.js.gz',
+			'n49mod01.data.js.gz',
+			'UE4Game.js.gz'   
 		].map(download); 
 
 	// add the data file promise. 
