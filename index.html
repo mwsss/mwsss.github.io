@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<title>n49mod01</title>
@@ -258,7 +258,7 @@ function isBrowser64Bit()  {
 
 // generated from game.template
 // note: Packaging process looks at HTML5Engine.ini to pick up values. 
-var TOTAL_GAME_MEMORY = 1073741824;
+var TOTAL_GAME_MEMORY = 536870912;
 
 // check max memory usage, we need to clamp it down for 32 bit browsers. 
 if (!isBrowser64Bit()) { 
@@ -291,7 +291,7 @@ window.onerror  = function(msg, url, line, column, error) {
         addLog( " downloading symbols file ");
         // get non minified symbols and demangle the callstack. 
 		$.ajax({
-			  url : "UE4Game.js.symbols",
+			  url : "UE4Game.js.symbols.gz",
 			  dataType: "text",
 			  success : function (data) {	
                   addLog(" symbols file downloaded, demangling..");
@@ -378,7 +378,7 @@ var Module = {
 
 		// file location. 
 		locateFile : function (name){ 
-		      return name + "";
+		      return name + ".gz";
 		},
 
 
@@ -435,9 +435,9 @@ $(document).ready(function() {
     addLog( "Starting downloads" );
     // start downloads in parallel, print when done.  
     var promises = [
-			'Utility.js',
-			'n49mod01.data.js',
-			'UE4Game.js'   
+			'Utility.js.gz',
+			'n49mod01.data.js.gz',
+			'UE4Game.js.gz'   
 		].map(download); 
 
 	// add the data file promise. 
