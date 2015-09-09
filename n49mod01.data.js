@@ -26,8 +26,8 @@ Module.expectedDataFileDownloads++;
     var REMOTE_PACKAGE_NAME = typeof Module['locateFile'] === 'function' ?
                               Module['locateFile'](REMOTE_PACKAGE_BASE) :
                               ((Module['filePackagePrefixURL'] || '') + REMOTE_PACKAGE_BASE);
-    var REMOTE_PACKAGE_SIZE = 19366510;
-    var PACKAGE_UUID = 'ada1abe5-6398-4fc1-9616-b1c17859488d';
+    var REMOTE_PACKAGE_SIZE = 20382719;
+    var PACKAGE_UUID = '0c222abc-1844-42bf-ba28-ded2ab5b4a58';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
       var xhr = new XMLHttpRequest();
@@ -133,7 +133,7 @@ Module['FS_createPath']('/n49mod01/Content', 'Paks', true, true);
     new DataRequest(118, 118, 0, 0).open('GET', '/Manifest_ObsoleteNonUFSFiles.txt');
     new DataRequest(118, 118, 0, 0).open('GET', '/Manifest_ObsoleteUFSFiles.txt');
     new DataRequest(118, 287, 0, 0).open('GET', '/UE4CommandLine.txt');
-    new DataRequest(287, 19366510, 0, 0).open('GET', '/n49mod01/Content/Paks/n49mod01-HTML5.pak');
+    new DataRequest(287, 20382719, 0, 0).open('GET', '/n49mod01/Content/Paks/n49mod01-HTML5.pak');
 
     function processPackageData(arrayBuffer) {
       Module.finishedDataFileDownloads++;
