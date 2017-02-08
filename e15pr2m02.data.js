@@ -184,6 +184,6 @@ Module['FS_createPath']('/Engine', 'Build', true, true);
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 104, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"audio": 0, "start": 104, "crunched": 0, "end": 104, "filename": "/Manifest_ObsoleteNonUFSFiles.txt"}, {"audio": 0, "start": 104, "crunched": 0, "end": 104, "filename": "/Manifest_ObsoleteUFSFiles.txt"}, {"audio": 0, "start": 104, "crunched": 0, "end": 298, "filename": "/UE4CommandLine.txt"}, {"audio": 0, "start": 298, "crunched": 0, "end": 36090328, "filename": "/e15pr2m02/Content/Paks/e15pr2m02-HTML5.pak"}, {"audio": 0, "start": 36090328, "crunched": 0, "end": 36090545, "filename": "/Engine/Build/Build.version"}], "remote_package_size": 36090545, "package_uuid": "e4b2d292-d615-4bca-ae29-4b62b6450509"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 104, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"audio": 0, "start": 104, "crunched": 0, "end": 142, "filename": "/UE4CommandLine.txt"}, {"audio": 0, "start": 142, "crunched": 0, "end": 12843252, "filename": "/e15pr2m02/Content/Paks/e15pr2m02-HTML5.pak"}, {"audio": 0, "start": 12843252, "crunched": 0, "end": 12843469, "filename": "/Engine/Build/Build.version"}], "remote_package_size": 12843469, "package_uuid": "4df0c513-db94-47a5-b8c5-7147576a392a"});
 
 })();

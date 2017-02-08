@@ -283,7 +283,7 @@ window.onerror = function(msg, url, line, column, error) {
 		addLog( " downloading symbols file ");
 		// get non minified symbols and demangle the callstack.
 		$.ajax({
-			url : "UE4Game.js.symbols",
+			url : "UE4Game-HTML5-Shipping.js.symbols",
 			dataType: "text",
 			success : function (data) {
 				addLog(" symbols file downloaded, demangling..");
@@ -394,7 +394,7 @@ var Module = {
 		TOTAL_MEMORY: TOTAL_GAME_MEMORY,
 		noImageDecoding: true,
 		noAudioDecoding: true,
-		arguments: ['../../../e15pr2m02/e15pr2m02.uproject ','/Game/StarterContent/Maps/Advanced_Lighting',' ','-Messaging',filehostargument],
+		arguments: ['../../../e15pr2m02/e15pr2m02.uproject ','',filehostargument],
 
 		print: (function() {
 			return addLog;
@@ -469,7 +469,7 @@ $(document).ready(function() {
 	var promises = [
 			'Utility.js',
 			'e15pr2m02.data.js',
-			'UE4Game.js'
+			'UE4Game-HTML5-Shipping.js'
 		].map(download);
 
 	// add the data file promise.
