@@ -180,6 +180,6 @@ Module['FS_createPath']('/e18puz/Content', 'Paks', true, true);
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 52, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"audio": 0, "start": 52, "crunched": 0, "end": 84, "filename": "/UE4CommandLine.txt"}, {"audio": 0, "start": 84, "crunched": 0, "end": 25537529, "filename": "/e18puz/Content/Paks/e18puz-HTML5.pak"}], "remote_package_size": 25537529, "package_uuid": "fd8de693-c229-4912-be15-97ebc5d57707"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 52, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"audio": 0, "start": 52, "crunched": 0, "end": 84, "filename": "/UE4CommandLine.txt"}, {"audio": 0, "start": 84, "crunched": 0, "end": 25420935, "filename": "/e18puz/Content/Paks/e18puz-HTML5.pak"}], "remote_package_size": 25420935, "package_uuid": "469c45e0-b98a-474d-9315-4274e97ad4ab"});
 
 })();
