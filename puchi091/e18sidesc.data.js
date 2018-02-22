@@ -180,6 +180,6 @@ Module['FS_createPath']('/e18sidesc/Content', 'Paks', true, true);
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 52, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"audio": 0, "start": 52, "crunched": 0, "end": 90, "filename": "/UE4CommandLine.txt"}, {"audio": 0, "start": 90, "crunched": 0, "end": 75341288, "filename": "/e18sidesc/Content/Paks/e18sidesc-HTML5.pak"}], "remote_package_size": 75341288, "package_uuid": "b36479ea-c420-49d8-ad33-6fbbfd5aa916"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 52, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"audio": 0, "start": 52, "crunched": 0, "end": 90, "filename": "/UE4CommandLine.txt"}, {"audio": 0, "start": 90, "crunched": 0, "end": 76713679, "filename": "/e18sidesc/Content/Paks/e18sidesc-HTML5.pak"}], "remote_package_size": 76713679, "package_uuid": "e601fc7f-81f8-4020-a470-201217103692"});
 
 })();
