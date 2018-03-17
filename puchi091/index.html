@@ -52,7 +52,7 @@
 			assetDownloadProgress: {}, // Track how many bytes of each needed asset has been downloaded so far.
 
 			UE4_indexedDBName: 'UE4_assetDatabase_e18sidesc', // TODO Nick: this should be an ascii ID string without special characters that is unique to the project that is being packaged
-			UE4_indexedDBVersion: 201802201344, // Bump this number to invalidate existing IDB storages in browsers.
+			UE4_indexedDBVersion: 201803141819, // Bump this number to invalidate existing IDB storages in browsers.
 		};
 
 		// Tests if type === 'browser' or type === 'os' is 64-bit or not.
@@ -1144,7 +1144,7 @@ $(document).ready(function() {
 				return { db: db, wasmBytes: wasmBytes, fromIndexedDB: true };
 			});
 		}).catch(function() {
-			return download(Module.locateFile('e18sidesc.wasm'), 'arraybuffer').then(function(wasmBytes) {
+			return download(Module.locateFile('e18sidesc-HTML5-Shipping.wasm'), 'arraybuffer').then(function(wasmBytes) {
 				return { db: db, wasmBytes: wasmBytes, fromIndexedDB: false };
 			});
 		});
@@ -1154,7 +1154,7 @@ $(document).ready(function() {
 			Module['wasmInstantiateActionReject'] = reject;
 		});
 
-		var mainJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('e18sidesc.js')).then(function(data) {
+		var mainJsDownload = fetchOrDownloadAndStore(db, Module.locateFile('e18sidesc-HTML5-Shipping.js')).then(function(data) {
 				return addScriptToDom(data).then(function() {
 					addRunDependency('wait-for-compiled-code');
 				});
