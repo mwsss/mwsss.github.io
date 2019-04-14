@@ -180,6 +180,6 @@ Module['FS_createPath']('/e212p02/Content', 'Paks', true, true);
   }
 
  }
- loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 52, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"audio": 0, "start": 52, "crunched": 0, "end": 86, "filename": "/UE4CommandLine.txt"}, {"audio": 0, "start": 86, "crunched": 0, "end": 30043473, "filename": "/e212p02/Content/Paks/e212p02-HTML5.pak"}], "remote_package_size": 30043473, "package_uuid": "a3bc38c8-cb1f-4c43-9b8d-44be1f02efeb"});
+ loadPackage({"files": [{"audio": 0, "start": 0, "crunched": 0, "end": 52, "filename": "/Manifest_NonUFSFiles_HTML5.txt"}, {"audio": 0, "start": 52, "crunched": 0, "end": 86, "filename": "/UE4CommandLine.txt"}, {"audio": 0, "start": 86, "crunched": 0, "end": 30135752, "filename": "/e212p02/Content/Paks/e212p02-HTML5.pak"}], "remote_package_size": 30135752, "package_uuid": "1c2a5764-d5a7-4740-8564-bc9b0c4bf27c"});
 
 })();
